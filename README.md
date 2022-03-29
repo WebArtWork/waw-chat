@@ -1,5 +1,5 @@
 # waw-chat
-# root:
+# in terminal /your_project:
 ```
 waw add waw-chat
 ```
