@@ -17,4 +17,9 @@ module.exports = async function(waw) {
 		});
 		res.json(chat);
 	});
+	waw.socket.add((socket)=>{
+		socket.on('chat_message', function (content) {
+			socket.broadcast.emit('chat_message', content);
+		});
+	});
 };
